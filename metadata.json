@@ -1,0 +1,6 @@
+{
+  "name": "AK45 Hi-Fi Amplifier Control & Multi-Output Audio Network",
+  "description": "Remote Bluetooth and network control app for AK-45 stereo audio amplifiers featuring rotary volume, multi-band equalizer, and multi-output audio device routing.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

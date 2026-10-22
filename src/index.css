@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+    --font-display: 'Share Tech Mono', monospace;
+  }
+  
+  body {
+    font-family: var(--font-sans);
+    background-color: #090d16;
+    color: #e2e8f0;
+  }
+}
+
+.font-digital {
+  font-family: 'Share Tech Mono', monospace;
+  letter-spacing: 0.1em;
+}
+
+/* Audio VU Meter and LED glow effects */
+.glow-blue {
+  text-shadow: 0 0 10px rgba(56, 189, 248, 0.8), 0 0 20px rgba(14, 165, 233, 0.6);
+}
+
+.glow-blue-box {
+  box-shadow: 0 0 15px rgba(56, 189, 248, 0.4), inset 0 0 15px rgba(14, 165, 233, 0.2);
+}
+
+.glow-knob-halo {
+  box-shadow: 0 0 25px rgba(56, 189, 248, 0.7), inset 0 0 15px rgba(14, 165, 233, 0.5);
+}
+
+/* Brushed metal look for amplifier faceplate */
+.brushed-metal {
+  background: linear-gradient(180deg, #1f242e 0%, #151922 45%, #181d26 55%, #10141b 100%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.knob-radial {
+  background: radial-gradient(circle at 35% 35%, #333a48 0%, #1a1e27 60%, #0d1017 100%);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6), inset 0 1px 1px rgba(255, 255, 255, 0.2);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0b0f19;
+}
+::-webkit-scrollbar-thumb {
+  background: #242c3d;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3b465d;
+}
